@@ -13,7 +13,7 @@ import model.entities.Seller;
 public class Program {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        SellerDao sellerDao = DaoFactory.creatSellerDao();
+        SellerDao sellerDao = DaoFactory.createSellerDao();
 
         System.out.println("=== TEST 1: seller findById");
         Seller seller = sellerDao.findById(3);
